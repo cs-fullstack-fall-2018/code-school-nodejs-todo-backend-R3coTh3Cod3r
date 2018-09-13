@@ -46,9 +46,9 @@ module.exports = function (app) {
             isDone: req.body.isDone,
             // hasAttachment: req.body.hasAttachment
         });
-        newTodo.save(function (err) {
-            if (err) {
-                throw err; // If we get an error then bail
+        newTodo.save(function (reyError) {
+            if (reyError) {
+                throw reyError; // If we get an error then bail
             }
             // Use Express to send a simple SUCCESS message
             res.json({result: 'OK'});
@@ -68,7 +68,7 @@ module.exports = function (app) {
                 throw err; // If we get an error then bail
             }
             // Use Express to send a simple SUCCESS message
-            res.json({result: 'OK'});
+            res.json({result: 'All Good'});
         });
     });
 
