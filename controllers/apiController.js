@@ -75,7 +75,7 @@ module.exports = function (app) {
     // ROUTE: DELETE an existing todo item by its ID
     app.delete('/api/todo', function (req, res) {
 
-        Todos.findOneAndDelete(req.body.id, function (err) {
+        Todos.findByIdAndRemove(req.body.id, function (err) {
             if (err) {
                 throw err; // If we get an error then bail
             }

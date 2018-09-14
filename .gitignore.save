@@ -1,0 +1,9 @@
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+.idea/
+NodeToDo.iml/
+code-school-react-todo-frontend/
+code-school-nodejs-todo-backend-R3coTh3Cod3r.iml

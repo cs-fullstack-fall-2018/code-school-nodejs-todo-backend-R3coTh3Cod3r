@@ -9,14 +9,13 @@ class App extends Component {
             data: [{
                 username: "Kenn",
                 todo: "  clean room",
-                isDone: "",
-                isnotDone:""
+                isDone: false,
+
             },
                 {
                     username: "Kevin",
                     todo: "get a hair transplant",
-                    isDone:"",
-                    isnotDone:""
+                    isDone: false,
                 }]
         }
     }
